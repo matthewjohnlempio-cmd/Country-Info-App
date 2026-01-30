@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
+import Footer from "./components/Footer";
 
 function App() {
   const [countries, setCountries] = useState([]);
@@ -162,7 +163,7 @@ function App() {
           ))
         )}
       </div>
-
+        
       {/* Tailwind animation keyframes */}
       <style>
         {`
@@ -175,6 +176,7 @@ function App() {
           }
         `}
       </style>
+      <Footer />
     </div>
   );
 }
